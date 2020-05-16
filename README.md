@@ -1,13 +1,13 @@
 # Raspi4_QT_GUI
 Raspi4_QT_GUI
 
-- 개발환경 구축
+- 개발환경 구축 (라즈베리파이)
 ```
 sudo apt-get install update
 sudo apt-get install qtcreator qt5-default
 
 ```
-
+- Windosw Host PC : 아나콘다 설치
 
 
  ## 1) PC버전 PyQT5 진행 :  

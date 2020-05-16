@@ -8,7 +8,7 @@ sudo apt-get install qtcreator qt5-default
 
 ```
 
-- 참고 링크 : https://forum.qt.io/topic/105817/qt-creator-on-raspberry-pi4-4gb-ram/3
+
 
  ## 1) PC버전 PyQT5 진행 :  
  ## 2) 라즈베리파이4 PyQT5 : 
@@ -20,4 +20,6 @@ sudo apt-get install qtcreator qt5-default
    - 버튼1을 누르면 LED가 켜짐
    - 물리적 스위치를 누르면 GUI상의 스위치에 불이 들어옴
  - 미니프로젝트2 : 
+ ## 4) 참조한 링크 밎 자료들 정리
+   - - 참고 링크 : https://forum.qt.io/topic/105817/qt-creator-on-raspberry-pi4-4gb-ram/3
 

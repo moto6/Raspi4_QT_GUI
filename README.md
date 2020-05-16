@@ -11,9 +11,9 @@ sudo apt-get install qtcreator qt5-default
 
 
  ## 1) PC버전 PyQT5 진행 :  
-     - https://github.com/d-h-k/Raspi4_QT_GUI/blob/master/PyQT5_PC.md
+   - https://github.com/d-h-k/Raspi4_QT_GUI/blob/master/PyQT5_PC.md
  ## 2) 라즈베리파이4 PyQT5 : 
-     - https://github.com/d-h-k/Raspi4_QT_GUI/blob/master/PyQT5_Rpi4.md
+   - https://github.com/d-h-k/Raspi4_QT_GUI/blob/master/PyQT5_Rpi4.md
  ## 3) 
  - 스토리 : 큐티는 크로스플랫폼 GUI 프레임웍이라서 리눅스, 윈도우(심지어 맥도!) 돌아간다.
  - 그래서 PC에서 간단하고 빠르고 편하게 파이큐티를 배워보고

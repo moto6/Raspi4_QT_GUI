@@ -1,11 +1,40 @@
 # PyQT5 배우기 Windows PC 에서
   ## 목차 및 필수요소
-  - 원문링크  
+  - 원문링크 : https://wikidocs.net/book/2165
+    - 시작하기
     ```
-    https://github.com/d-h-k/Raspi4_QT_GUI.git
+    git clone https://github.com/d-h-k/Raspi4_QT_GUI.git
+
     ```
+    - https://wikidocs.net/21873
+  - 참고할만한 튜토리얼
+    ```
+    PyQt5 공식 문서 (http://pyqt.sourceforge.net/Docs/PyQt5/)
+    pythonspot (https://pythonspot.com/gui/)
+    zetcode (http://zetcode.com/gui/pyqt5/)
+    opentutorials.org (https://opentutorials.org/module/544)
+    tutorialspoint (https://www.tutorialspoint.com/pyqt/)
+    udemy 강의1: Python Desktop Application Development with PyQt
+    udemy 강의2: Create Simple GUI Applications with Python and Qt
+    ```  
   - 목표 : 라즈베리파이의 이런저런 기능을 파이썬으로 돌리자
-    
+  - 실행가능한 방법 찾는중
+    - 테스트중
+    ```
+    windows10, anaconda3 환경에서 설치했습니다.
+
+    anaconda prompt 실행
+    activate [환경이름]
+    pip install pyqt5
+    pip install pyqt5-tools
+
+    C:\Users\[사용자명]\AppData\Local\Continuum\anaconda3\envs\[환경이름]\Library\bin\designer.exe
+    실행
+    ```  
+    - 윈도우에서는 되지만 라즈에서 쓸수없는방법
+    ```
+    파이참 + 아나콘다
+    ```
   ## Day1 
   ### QT Desiner 소개  
   - 환경설정 : 설치: 아나콘다, VSCODE

@@ -13,7 +13,34 @@ https://bigwavek.tistory.com/entry/python-PyQt5-%EB%B0%8F-%EC%8B%A4%ED%96%89%ED%
 ```
 - Windosw Host PC : 아나콘다 설치
 
+- mirier
+```
+GUI
+1일차 : 
+PyQT 위젯
+시그널과 슬롯
+2일차 : 
+다이얼로그 다루기
+메인 윈도우 만들기
+3일차 : 
+QTableWidget
+데이터 파싱 및 그래프 출력
+4일차 :
+AWS와 DB 연동
+DB 데이터 관리 프로젝트 
 
+
+테스트 완료
+1. QtTableWidget
+2. SQLlight로 Query
+3. Matplot Library (그래프)
+
+명일 테스트 예정
+1. Thread 예제
+2. OpenCV
+3. GPIO 컨트롤
+4. MySQL Query
+```
  ## 1) PC버전 PyQT5 진행 :  
    - https://github.com/d-h-k/Raspi4_QT_GUI/blob/master/PyQT5_PC.md
  ## 2) 라즈베리파이4 PyQT5 : 

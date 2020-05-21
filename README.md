@@ -8,9 +8,7 @@ sudo apt-get install qtcreator qt5-default
 
 ```
 - 임베디드 설치가 가능할까
-```
-https://bigwavek.tistory.com/entry/python-PyQt5-%EB%B0%8F-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0
-```
+  - https://bigwavek.tistory.com/entry/python-PyQt5-%EB%B0%8F-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0
 - Windosw Host PC : 아나콘다 설치
 
 - mirier

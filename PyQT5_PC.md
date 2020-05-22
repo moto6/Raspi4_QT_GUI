@@ -27,6 +27,7 @@
     activate [환경이름]
     pip install pyqt5
     pip install pyqt5-tools
+    
 
     C:\Users\[사용자명]\AppData\Local\Continuum\anaconda3\envs\[환경이름]\Library\bin\designer.exe
     실행

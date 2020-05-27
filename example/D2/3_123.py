@@ -13,9 +13,9 @@ HeadLayout.addWidget(QPushButton('ONE'))
 HeadLayout.addWidget(QPushButton('TWO'))
 HeadLayout.addWidget(QPushButton('TRE'))
 
-bodyLayout.addWidget(QPushButton('1'))
-bodyLayout.addWidget(QPushButton('2'))
-bodyLayout.addWidget(QPushButton('3'))
+bodyLayout.addWidget(QPushButton('111'))
+bodyLayout.addWidget(QPushButton('222'))
+bodyLayout.addWidget(QPushButton('333'))
 
 
 window.setLayout(mainLayout)

@@ -2,7 +2,7 @@
 from gpiozero import Button
 from time import sleep
 
-button = Button(2)
+button = Button(24)
 
 while True:
     if button.is_pressed:

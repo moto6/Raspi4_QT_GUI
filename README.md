@@ -16,7 +16,7 @@ sudo apt-get install qtcreator qt5-default
 GUI
 1일차 : 
 PyQT 위젯
-시그널과 슬롯
+시그널과 슬롯ㅇㅇㅇㅇㅇ
 2일차 : 
 다이얼로그 다루기
 메인 윈도우 만들기
@@ -27,7 +27,7 @@ QTableWidget
 AWS와 DB 연동
 DB 데이터 관리 프로젝트 
 
-
+ㄴ
 테스트 완료
 1. QtTableWidget
 2. SQLlight로 Query

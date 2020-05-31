@@ -1,5 +1,11 @@
 # PyQT5 배우기 Windows PC 에서
   ## 목차 및 필수요소
+  - 설치 간단하게 : 파이썬 최신으로 깔고
+  ```
+  pip install pyqt5
+  pip install pyqt5-tools
+  pip install python-opencv
+  ```
   - 원문링크 : https://wikidocs.net/book/2165
     - 시작하기
     ```

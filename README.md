@@ -7,6 +7,12 @@ sudo apt-get install update
 sudo apt-get install qtcreator qt5-default
 
 ```
+- 개발환경구축 HostPC
+```
+pip install pyqt5
+pip install pyqt5-tools
+pip install python-opencv
+```
 - 임베디드 설치가 가능할까
   - https://bigwavek.tistory.com/entry/python-PyQt5-%EB%B0%8F-%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0
 - Windosw Host PC : 아나콘다 설치

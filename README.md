@@ -104,9 +104,7 @@
     공식홈페이지 링크
     https://www.raspberrypi.org/products/raspberry-pi-4-model-b/
   ```
-  - 채용공고(네이버랩스)
-    - https://recruit.navercorp.com/naver/job/detail/developer?annoId=20003407&classId=&jobId=&entTypeCd=&searchTxt=&searchSysComCd=
-
+  
     - 라즈베리파이 PyQt5 설치
       - sudo apt-get install python3-pyqt5
       - sudo apt-get install qttools5-dev-tools

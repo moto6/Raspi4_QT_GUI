@@ -13,22 +13,22 @@ menuEXIT = menu.addMenu('EXIT')
 bye = QAction("NEW",win)
 menuFILE.addAction(bye)
 
-#47
+#47================
 def run():
     bar.showMessage("메뉴 버튼을 눌렀습니다")
 
 bar = win.statusBar()
 menuFILE.triggered.connect(run)
 
-#48
-
-#49
-
-#
-#
-#
-#
-#
+#48================
+#49================
+#50================
+#52================
+#53================
+#54================
+#55================
+#56================
+#57================
 
 win.show()
 app.exec()

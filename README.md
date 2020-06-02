@@ -82,3 +82,62 @@
   3. GPIO 컨트롤
   4. MySQL Query
   ```
+
+# # Day1 Fisrt
+  - 수업자료
+  ```
+  라즈베리파이 OS 설치방법 : 먼저 OS부터 Clean-install 부터 시작!
+
+    (추천)라즈비안 설치
+    구글드라이브 링크에서 OS이미지를 다운받아 설치
+    이미지 다운로드 링크 클릭!
+    balena-etcher 프로그램 사용해서 SD Card에 burn!
+    https://www.balena.io/etcher/
+    성공적으로 작업이 완료되면 SD를 라즈베리파이에 장착하고 전원/주변기기들을 장착하고 Booting!
+    라즈베리파이 OS 설치 (!!사용금지!)
+    (사용금지!) 업데이트된지 5일된 새로나온 OS, 호환성 보장X
+    https://www.raspberrypi.org/downloads/
+    Raspberry Pi Imager for Windows <<- 링크 클릭!
+    Raspi4 8기가 버전 출시
+    https://www.youtube.com/watch?v=erC2Pu_Jw7o
+    라즈베리파이 OS는 32비트, 최대 램은 4기가 까지 가능하지만, 문제 해결된 버전
+    공식홈페이지 링크
+    https://www.raspberrypi.org/products/raspberry-pi-4-model-b/
+  ```
+  - 채용공고(네이버랩스)
+    - https://recruit.navercorp.com/naver/job/detail/developer?annoId=20003407&classId=&jobId=&entTypeCd=&searchTxt=&searchSysComCd=
+
+    - 라즈베리파이 PyQt5 설치
+      - sudo apt-get install python3-pyqt5
+      - sudo apt-get install qttools5-dev-tools
+
+    - 라즈베리파이에 PyQt5가 설치되어있는지 확인
+      - python3
+      - import PyQt5  
+
+    - 라즈베리파이 OpenCV
+      - sudo pip3 install opencv-contrib-python
+      - sudo pip3 install opencv-python
+
+    - 라즈베리파이 한글
+      - sudo apt-get -y install ibus
+      - sudo apt-get -y install ibus-hangul
+      - sudo apt-get -y install fonts-unfonts-core
+
+
+    - 기존 라즈비안 oS 다운로드 링크
+      - https://drive.google.com/file/d/1r9MPasOY0LY0I5ysVBpq5TQ9AkNVXyyJ/view  
+
+    - 수많은 PyQt 설치법들..
+      - 아나콘다+파이참
+        - 가상Python 환경(activate base) : 장점 ->> 여러가지 환경을 꾸며놓고 한PC에서 동시다발적인 프로젝트 진행이 가능하다. 
+        - 단점 : 속도가 느려지고..... 배포가 불편하다.. 초보들에게 장애물로 작용한다..
+      - pip설치, apt-get 설치(only ubuntu)
+        - 저희가 진행한 것, 장점은 : Python을 설치할 수 있는 환경이라면(라즈베리파이, 비글본 블랙... ) 동일하게 설치가 가능하다
+        - 단점으로는, 나중에 다른 개발환경을 구축하고자 할때, Ptqt버전이 3.XX 필수로 요구되는경우, 
+          - ROS -> APP 파이큐티 3.XXX 을이용해서 제작.
+        - 문제가 생기면 python 통째로 삭제 후 재설치
+        - autoremove 명령어 활용 (라즈베리파이, 리눅스 기준)
+        
+
+        

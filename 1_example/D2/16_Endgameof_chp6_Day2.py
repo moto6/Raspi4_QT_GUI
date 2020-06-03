@@ -89,7 +89,7 @@ def remove():
 
 def byebye():
     print("BYE")
-    quit()
+    app.quit()
 
 
 names = ["inho","dongHun","cart","hwan"]
@@ -104,4 +104,5 @@ bye.triggered.connect(byebye)
 
 
 win.show()
+#app.quit()
 app.exec()

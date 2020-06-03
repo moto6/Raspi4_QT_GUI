@@ -138,4 +138,6 @@
         - autoremove 명령어 활용 (라즈베리파이, 리눅스 기준)
         
 
-        
+- GPIO 파이썬 
+  - https://gpiozero.readthedocs.io/en/stable/        
+  - https://www.raspberrypi.org/documentation/usage/gpio/python/README.md

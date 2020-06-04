@@ -21,11 +21,14 @@ class MyApp(QMainWindow):
         for i in range(8):
             for x in range(0,101,10):
                 self.pros[i].setValue(x)
-                sleep(0.01)
+                sleep(0.05)
+                print("UI 동작 중, X버튼을 클릭해도 UI가 먹통인 것을 확인할 수 있다")
+
 
 
 app = QApplication([]) 
 win = MyApp()
 win.show()
 app.exec()
+
 

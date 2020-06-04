@@ -6,7 +6,7 @@ from PyQt5.uic import *
 class MyApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        loadUi("timer.ui",self)
+        loadUi("chp1_2_QTimer_and_ProgressBar.ui",self)
         self.main()
 
     def main(self):

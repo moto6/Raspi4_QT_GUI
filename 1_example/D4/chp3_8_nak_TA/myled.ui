@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>328</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>39</x>
+      <y>39</y>
+      <width>361</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0" colspan="2">
+      <widget class="QLCDNumber" name="lcdNumber"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>LED ON</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>LED OFF</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QDial" name="dial"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>432</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ledOn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ledOff()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>339</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dial</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setDial()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>221</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ledOn()</slot>
+  <slot>ledOff()</slot>
+  <slot>setDial()</slot>
+ </slots>
+</ui>

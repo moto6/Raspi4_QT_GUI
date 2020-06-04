@@ -1,0 +1,48 @@
+- 설치
+```
+sudo apt-get install pyqt5-dev-tools
+sudo apt-get install qtcreator
+sudo apt-get install python3-pyqt.qtquick
+```
+
+- 삼바 설치
+```
+sudo apt-get install samba samba-common-bin
+```
+
+
+- 삼바 계정과 패스워드 설정
+```
+sudo smbpasswd -a pi
+```
+패스워드는 raspberry
+
+- 삼바 설정파일 변경을 위해
+```
+sudo nano /etc/samba/smb.conf
+```
+
+- 맨 아랫줄에 추가해줘야하는거
+```
+[pi]
+comment = rpi samba server by girin
+path = /home/pi
+valid user = pi
+writable = yes
+read only = no
+browseable = yes
+```
+
+
+- 삼바 재시작
+```
+sudo service smbd restart
+```
+- 아래 두개는 안되는거 (과거의 버전 혹은 데비안 배포판에 따라 다름..
+```
+sudo service samba restart
+sudo /etc/init.d/samba restart
+```
+
+
+

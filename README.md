@@ -136,8 +136,110 @@
           - ROS -> APP 파이큐티 3.XXX 을이용해서 제작.
         - 문제가 생기면 python 통째로 삭제 후 재설치
         - autoremove 명령어 활용 (라즈베리파이, 리눅스 기준)
-        
-
 - GPIO 파이썬 
   - https://gpiozero.readthedocs.io/en/stable/        
   - https://www.raspberrypi.org/documentation/usage/gpio/python/README.md
+
+  # 3
+  - 이후에 업데이트 상황이 있는지 체키라웃
+  ```
+  git pull
+  ```
+
+
+- 클래스의 장점에 관하여
+  - 클래스 사용의 장점
+    - (코드의)재사용성 : 다른이/ 다른 프로젝트에 쉽게 사용할 수 있도록 고려해서 만들어야 한다
+    - 모듈화 프로그래밍 : 프로젝트에서 기능별로 구현해 하나로 모으는, 반대되는 개념은 스파게티 코드,짧은 개발시간에 거대한 프로그램 제작을 위해 필수다
+    - 리소스를 절약할수 있다 : 재사용, 모듈화를 통해서 동일하거나 유사한 작업을 반복하지 않을수 있다.
+    - 객체지향적으로 프로그래밍을 할 수 있다.
+    
+- 파이썬 설치 디렉토리
+  - 여러분의 파이썬이 실제로 동작하는 위치에 대하여
+    - 윈도우즈
+      > C:\Users\<[username]>\AppData\Local\Programs\Python
+    - 리눅스
+      > tree -lR | grep 'python'
+      > tree / -lR | grep 'python'
+    - 나중에 파이썬관련 개발하다 보면 문제가 발생 : 
+      - 인스톨 패키지가 꼬이거나 롤백해야 한다거나.... -> ROS 패키지 파이썬 문제
+  - Why NOT using 듸자이너
+    - 이건마치 여러분들이 바닐라자바스크립트/js를 배우는 이유
+    - 기술 Only for 문제 해결
+    - 초보자들 입장에서 마치 진입장벽
+
+  - QT 설치 - qtquick , qtcreator
+    ```
+    sudo apt-get install pyqt5-dev-tools
+    sudo apt-get install python3-pyqt5.qtquick
+    sudo apt-get install qtcreator
+    ```
+  - QT 개발환경 
+    - non-IDE : 텍스트 코딩만으로 UI 를 개발
+    - QT Designer : UI 디자인 Tool -> 
+    - QT Creater : Designer 업그레이드 버전
+    - 이외에
+      - QML 혹은 Python파일을 통해 UI 정보를 주고받는다.
+  
+  - Why?? 왜 첫날부터 디자이너 하지 왜 처음에는 그냥 non-IDE 방식으로 GUI 를 개발했나요? 
+    - 기술은 불편함, 문제를 해결하기 위해서 존재한다. 
+    - 불편함을 느끼지 못한다면 기술의 필요성을 
+      - 예를들어 강력한 자동완성 기능이 있는 (VS Code / 파이참 ) 에디터를 사용할 경우 대부분의 사람들이 흥미를 잃어가고, 새로운 지식에 대하여 이해도도 떨어진다.
+      - 위와 같은 이유로 처음 배울때에는 자동완성 기능이 없는 IDE/에디터가 더 좋은 선택이 될 수도 있다!!!
+
+  - 포트폴리오에 대한 짧은 생각.. 
+    - 포트폴리오는 대기업에서 보지 않는다 : 일부 정답 맞습니다. ->> 공채 입사전형에서는 보지 않았다.
+      - 공채 입사전형이라도 자소서 쓰는데 [내 경험] =>> 객관화 된 자료로 정리해 놓으면 분명히 도움이 된다!
+      - 기본적으로는 회사마다 다르다.
+        - 현대자동차 : 공채 X ->> 탈 공채화가 가속화.. : 과거에는 회사별로 공채를 통해 입사했다면(신입사원 교육 -> 부서배치)
+        - 앞으로는 주로 부서별로 채용을 하고, 자신들의 부서별 채용!! : 포폴이 도움이 될수 있다. 
+      - 카카오, 네이버 -> 포트폴리오 봅니다!
+      - 포폴이 갑자기 필요할때? -> 1주일만에 준비가 안됩니다.. 미리 만들어 놓으셔야 합니다.
+      - 신입때 잘 만들어 놓으면.. 경력직 이직도 훨씬 준비가 수월해진다..
+      - 중소기업도 포트폴리오 있으면 많이 보고 서류 합격률이 높다,
+      - 자소이력 많이내서 많이 돌리고, 평균적인 서류 합격률을 높인다 => 포트폴리오.. 
+
+
+# 4
+## SAMBA(옵션..)
+- 삼바 설치
+```
+sudo apt-get install -y samba samba-common-bin
+```
+
+
+- 삼바 계정과 패스워드 설정
+```
+sudo smbpasswd -a pi
+```
+패스워드는 raspberry
+
+- 삼바 설정파일 변경을 위해
+```
+sudo nano /etc/samba/smb.conf
+```
+
+- 맨 아랫줄에 추가해줘야하는거
+```
+[pi]
+comment = rpi samba server by girin
+path = /home/pi
+valid user = pi
+writable = yes
+read only = no
+browseable = yes
+```
+
+
+- 삼바 재시작
+```
+sudo service smbd restart
+```
+- 아래 두개는 안되는거 (과거의 버전 혹은 데비안 배포판에 따라 다름..
+```
+sudo service samba restart
+sudo /etc/init.d/samba restart
+```
+
+- 참고 링크 : https://fishpoint.tistory.com/1553
+
